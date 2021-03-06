@@ -1,6 +1,6 @@
 #ifndef PERSON_H
 #define PERSON_H
-
+using namespace std;
 #include "Date.h"
 
 class Person{
