@@ -88,21 +88,7 @@ ofstream& operator<<(ofstream& out, const Person& p){
 }
 
 ifstream& operator>>(ifstream& in, Person& p){
-	//string str;
-	/*float val;
-	//in >> str;
-	//cout << str <<endl;
-	for (int i=0; i<m.N; ++i)
-		for(int j=0; j<m.M; ++j)
-		{
-			//in >> val;
-			//cout << str[m.N*i+j]<<endl;
-			//val =(double)str[m.N*i+j];
-			//cout << val<<endl;
-			//m.Set(i,j,str[m.N*i+j]/25);
-			in >> val;
-			m.data[i][j] = val;
-		}*/
+	
 	string tmp;
 
 	in >> tmp;
