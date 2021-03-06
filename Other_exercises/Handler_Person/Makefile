@@ -16,7 +16,7 @@ Handler.o: Handler.cc
 	${CC} -c Handler.cc
 
 main.o: main.cpp 
-	$[CC] -c main.cpp
+	${CC} -c main.cpp
 	
 
 #Linking progetto
