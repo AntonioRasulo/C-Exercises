@@ -1,6 +1,7 @@
 /*Definire una classe Persona che memorizzi nome, cognome, 
 indirizzo, data di nascita di una Persona. Realizzare anche gli operator<< e operator>> per tale classe.*/
-
+#ifndef PERSON_H
+#define PERSON_H
 class Person{
 	private:
 		string name;
@@ -14,6 +15,11 @@ class Person{
 			surname = surname_;
 			address = address_;
 			bornPlace = bornPlace_;
+		}
+	
+		Person()
+		{
+			
 		}
 		
 		void setName(const string name_)
@@ -41,7 +47,7 @@ class Person{
 		
 	friend ifstream& operator>>(ifstream& in,  Person& p);
 	friend ofstream& operator<<(ofstream& out, const Person& m);
-}
+};
 
 
 ostream& operator<<(ostream& out, const Person& p)
@@ -113,3 +119,5 @@ ifstream& operator>>(ifstream& in, Person& p){
 	
 	return in;
 }
+
+#endif
