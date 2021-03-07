@@ -81,8 +81,7 @@ int Table::extract()
                 for(iter = t.begin(); iter!=t.end(); iter++)
                 {
                         if(*iter==tmp1)
-                        {
-                                *iter=0;
+			{
                                 flag = true;
                                 break;
                         }
