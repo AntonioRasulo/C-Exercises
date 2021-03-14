@@ -10,7 +10,7 @@ using namespace std;
 #include "ComplexNumber.h"
 #include "VectorCN.h"
 
-/*inline ComplexNumber VectorCN::Iterator::GetNext()                  //It's possible to scan the vector and check if there
+inline ComplexNumber VectorCN::Iterator::GetNext()                  //It's possible to scan the vector and check if there
 {
         ComplexNumber tmp(*iter);
         ++iter;
@@ -20,7 +20,7 @@ using namespace std;
 inline bool VectorCN::Iterator::HasNext() const
 {
         return ( iter != ptr_cn->vcn.end());               //are present other elements
-}*/
+}
 
 
 
